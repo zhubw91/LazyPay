@@ -1,0 +1,11 @@
+<h1>Hello Mierda !</h1>
+
+<% @display.each do |d| %>
+<%= d.content %>
+<% end %>
+
+<%= form_for(@message) do |m| %>
+<%= m.label :message %><br>
+<%= m.text_area :content %>
+<%= m.submit "Upload" %>
+<% end %>
